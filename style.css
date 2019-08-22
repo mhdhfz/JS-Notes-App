@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  background: #eee;
+}
+
+header {
+  padding: 10px 0;
+}
+
+.container-fluid {
+  display: flex;
+  height: 90%;
+  padding: 0;
+}
+
+.main-area {
+  width: 75%;
+}
+
+#title {
+  height: 7%;
+  background: #fff;
+  outline: none;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+#content {
+  background: #fff;
+  outline: none;
+  padding: 1rem;
+  overflow-y: scroll;
+  height: 93%;
+}
+
+#side-notes {
+  background: #fff;
+  width: 25%;
+  border-right: 1px solid #eee;
+}
+
+header div {
+  padding: 0 20px;
+}
