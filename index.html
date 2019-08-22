@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
@@ -21,10 +25,22 @@
       </div>
     </header>
     <div class="container-fluid">
-      <div id="side-notes">list notes</div>
+      <div id="side-notes">
+        <div class="list">list notes</div>
+        <ul class="list-group list-notes mx-auto">
+          <li class="list-note">
+            <span>Catatan Pertama</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+        </ul>
+      </div>
       <div class="main-area">
-        <div id="title">title</div>
-        <div id="content" contenteditable="true"></div>
+        <div id="title" contenteditable="true" data-placeholder="title"></div>
+        <div
+          id="content"
+          contenteditable="true"
+          data-placeholder="content goes here..."
+        ></div>
       </div>
     </div>
     <script src="app.js"></script>

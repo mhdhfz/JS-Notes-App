@@ -27,6 +27,12 @@ header {
   width: 75%;
 }
 
+.logo {
+  margin-left: 10px;
+  top: 20px;
+  font-weight: bold;
+}
+
 #title {
   height: 7%;
   background: #fff;
@@ -47,8 +53,31 @@ header {
   background: #fff;
   width: 25%;
   border-right: 1px solid #eee;
+  overflow-y: scroll;
 }
 
 header div {
   padding: 0 20px;
+}
+
+div:empty:before {
+  content: attr(data-placeholder);
+  color: gray;
+}
+
+.list {
+  background: #4b4b4e;
+  color: #fff;
+  padding: 13px;
+  text-align: center;
+}
+
+.list-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 13px;
+  list-style-type: none;
+  position: relative;
 }
